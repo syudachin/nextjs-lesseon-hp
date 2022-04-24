@@ -11,6 +11,7 @@ export default function Blog({ posts }) {
     </Layout>
   );
 }
+
 export async function getStaticProps() {
   const posts = await getAllPostsData();
   return {
